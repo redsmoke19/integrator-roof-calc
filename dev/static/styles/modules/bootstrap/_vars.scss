@@ -1,0 +1,79 @@
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: 100px,
+  7: 7px,
+  10: 10px,
+  12: 12px,
+  15: 15px,
+  16: 16px,
+  17: 17px,
+  20: 20px,
+  24: 24px,
+  25: 25px,
+  30: 30px,
+  32: 32px,
+  34: 34px,
+  40: 40px,
+  46: 46px,
+  50: 50px,
+  54: 54px,
+  56: 56px,
+  57: 57px,
+  60: 60px,
+  65: 65px,
+  66: 66px,
+  70: 70px,
+  80: 80px,
+  85: 85px,
+  90: 90px,
+  100: 100px,
+  110: 110px,
+  120: 120px,
+  140: 140px,
+  164: 164px,
+  260: 260px,
+  500: -50px,
+) !default;
+
+$position-values: (
+  0: 0,
+  8: 8px,
+  50: 50%,
+  100: 100%
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1280px,
+  xl: 2000px,
+  xxl: 2100px
+) !default;
+
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 1640px,
+  xl: 1800px,
+  xxl: 80%
+) !default;
+
+// Forms
+$input-btn-focus-width: 2px;
+$form-feedback-icon-valid:  url("data:image/svg+xml,<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M12 2C6.486 2 2 6.486 2 12C2 17.514 6.486 22 12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2ZM12 20C7.589 20 4 16.411 4 12C4 7.589 7.589 4 12 4C16.411 4 20 7.589 20 12C20 16.411 16.411 20 12 20Z' fill='#67CD90'/><path d='M9.99896 13.587L7.69996 11.292L6.28796 12.708L10.001 16.413L16.707 9.70697L15.293 8.29297L9.99896 13.587Z' fill='#67CD90'/></svg>");
+$form-check-input-checked-bg-image: url("data:image/svg+xml,<svg width='12' height='10' viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 4.5L4.5 8L11 1.5' stroke='#5480CE' stroke-width='2.5'/></svg>");
+$form-check-input-checked-bg-color: $white;
+
+// Badge
+$badge-border-radius: 1rem;
+
+// Colors
+$red: #ff7575;
+$green: #67cd90;

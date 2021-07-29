@@ -1,0 +1,55 @@
+.roof-radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  left: -9999px;
+  + label {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-size: 10px;
+    flex-direction: column;
+    justify-content: center;
+    height: 110px;
+    line-height: 15px;
+    position: relative;
+    width: 120px;
+  }
+  + label::before {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all ease-out .3s;
+    width: 100%;
+  }
+  &:focus + label::before {
+    box-shadow: $input-btn-focus-box-shadow;
+  }
+  &:checked + label::before {
+    border: 1px solid $dark-blue-color;
+  }
+  // &:checked + label::after,
+  // &:not(:checked) + label::after {
+  //   background-color: blue;
+  //   border-radius: 50%;
+  //   content: '';
+  //   left: 4px;
+  //   height: 6px;
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  //   transition: all ease-out .15s;
+  //   width: 6px;
+  // }
+  // &:not(:checked) + label::after {
+  //   opacity: 0;
+  // }
+  // &:checked + label::after {
+  //   opacity: 1;
+  // }
+}

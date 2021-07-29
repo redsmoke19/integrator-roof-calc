@@ -9,6 +9,5 @@
     font-style: $style;
   }
 }
-@include font-face('Open Sans', '../fonts/opensans/opensans/opensans', 400, 'normal');
-@include font-face('Open Sans', '../fonts/opensans/opensanslight/opensanslight', 300, 'normal');
-@include font-face('Open Sans', '../fonts/opensans/opensanssemibold/opensanssemibold', 600, 'normal');
+@include font-face('Montserrat', '../fonts/montserrat/regular/Montserrat-Regular', 400, 'normal');
+@include font-face('Montserrat', '../fonts/montserrat/bold/Montserrat-Bold', 700, 'normal');

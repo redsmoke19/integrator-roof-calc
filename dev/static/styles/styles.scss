@@ -3,12 +3,15 @@
 @import 'utils/mixins';
 @import 'utils/fonts';
 @import 'utils/sprite';
+@import './modules/bootstrap/bootstrap';
 //@include sprites($spritesheet-sprites);
 
 html {
-  font-family: 'Open Sans', Arial, serif;
+  font-family: $main-fomt;
   font-size: 16px;
   height: 100%;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
 }
 
 body {
