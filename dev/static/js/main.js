@@ -2,8 +2,10 @@
   'use strict';
   const getSlider = () => {
     const breakpointDesktop = window.matchMedia('(min-width: 1280px)');
-    const roofTypeObject = document.querySelector('.roof-type');
+    const roofTypeObject = document.querySelector('._js-roof-type');
+    const roofMaterialObject = document.querySelector('._js-roof-material');
     let roofType;
+    let roofMaterial;
 
     const breakpointChecker = function () {
       let resizeTimeout;
@@ -27,7 +29,7 @@
 
     const enableRoofSlider = function () {
       if (roofTypeObject) {
-        roofType = new Swiper('.roof-type', {
+        roofType = new Swiper(roofTypeObject, {
           direction: 'horizontal',
           grabCursor: true,
           preventClicks: true,
@@ -38,6 +40,19 @@
           slidesOffsetAfter: 20
         });
       }
+      if (roofMaterialObject) {
+        roofMaterial = new Swiper(roofMaterialObject, {
+          direction: 'horizontal',
+          grabCursor: true,
+          preventClicks: true,
+          preventClicksPropagation: true,
+          slidesPerView: 'auto',
+          spaceBetween: 20,
+          slidesOffsetBefore: 20,
+          slidesOffsetAfter: 20
+        });
+      }
+
     };
 
     // const rewiesSlider = document.querySelector('.reviews-slider');
