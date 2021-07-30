@@ -1,18 +1,18 @@
-.swiper-container.roof-type._js-roof-material
-	ul.roof-form__radio-list.roof-type__list.swiper-wrapper
-		li.roof-type__item.swiper-slide
-			input.roof-type__radio(type="radio" name="roof-material" value="odnoskat" id="roofMaterialMetal" checked)
-			label.roof-type__label(for="roofMaterialMetal")
-				span.root-type__name Металлочерепица
-			.roof-type__tooltip.tooltip
-				button.tooltip__button ?
+.swiper-container.form__radio-container._js-roof-material
+	ul.form__radio-list.radio-list.swiper-wrapper
+		li.radio-list__item.swiper-slide
+			input.radio-big(type="radio" name="roof-material" value="odnoskat" id="roofMaterialMetal" checked)
+			label.radio-big__label(for="roofMaterialMetal")
+				span.radio-list__name Металлочерепица
+			.radio-list__tooltip.tooltip
+				button(type="button").tooltip__button ?
 				//- span.tooltip__data-text Форма близка к натуральной черепице. Она оптимально подходит для использования в различных климатических условиях для коттеджного и малоэтажного строительства. Вам доступны цвета по каталогу RAL, RR и покрытия с рисунком (под натуральное дерево, камень).
 				//- a.tooltip__data-link(href="#") Ссылка
-		li.roof-type__item.swiper-slide
-			input.roof-type__radio(type="radio" name="roof-material" value="odnoskat" id="roofMaterialProflist")
-			label.roof-type__label(for="roofMaterialProflist")
-				span.root-type__name Профнастил
-		li.roof-type__item.swiper-slide
-			input.roof-type__radio(type="radio" name="roof-material" value="odnoskat" id="roofMaterialFalcevaya")
-			label.roof-type__label(for="roofMaterialFalcevaya")
-				span.root-type__name Фальцевая
+		li.radio-list__item.swiper-slide
+			input.radio-big(type="radio" name="roof-material" value="odnoskat" id="roofMaterialProflist")
+			label.radio-big__label(for="roofMaterialProflist")
+				span.radio-list__name Профнастил
+		li.radio-list__item.swiper-slide
+			input.radio-big(type="radio" name="roof-material" value="odnoskat" id="roofMaterialFalcevaya")
+			label.radio-big__label(for="roofMaterialFalcevaya")
+				span.radio-list__name Фальцевая

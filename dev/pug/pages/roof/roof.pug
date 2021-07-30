@@ -1,13 +1,13 @@
 section.roof-calculate.pt-50
 	.container.gx-0
-		h1.roof-calculate__title Калькулятор расчета кровли
+		h1.page__title Калькулятор расчета кровли
 		.roof-calculate__inner.stage__inner
 			ul.roof-calculate__steps.stage__steps
-			form.roof-calculate__form.roof-form(action="#" method="POST")
-				.roof-form__fieldset
-					h3.roof-form__legend Выберите тип кровли
+			form.roof-calculate__form.form(action="#" method="POST")
+				.form__fieldset
+					h3.form__legend Выберите тип кровли
 					include ../../modules/roof-parameter/roof-type
-				.roof-form__fieldset
-					h3.roof-form__legend Материал
+				.form__fieldset
+					h3.form__legend Материал
 					include ../../modules/roof-parameter/roof-material
 

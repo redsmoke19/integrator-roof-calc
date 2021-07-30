@@ -1,3 +1,13 @@
+.page {
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    margin: 0 0 20px 0;
+    padding: 0 20px;
+  }
+}
+
 .stage {
   &__inner {
     box-shadow: 0 0 4.2px 0 rgba(0, 0, 0, .07);

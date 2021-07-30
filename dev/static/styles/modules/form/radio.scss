@@ -1,25 +1,9 @@
-.roof-type {
-  margin: 0 -20px;
-  &__item {
-    position: relative;
-    width: auto;
-  }
-  &__radio {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    position: absolute;
-    left: -9999px;
-    &:focus + label::before {
-      box-shadow: $input-btn-focus-box-shadow;
-    }
-    &:checked + label::before {
-      border: 1px solid $dark-blue-color;
-    }
-    &:checked + label::after {
-      opacity: .6;
-    }
-  }
+.radio-big {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  left: -9999px;
   &__label {
     align-items: center;
     cursor: pointer;
@@ -65,5 +49,14 @@
     height: 100%;
     object-fit: contain;
     width: 100%;
+  }
+  &:focus + label::before {
+    box-shadow: $input-btn-focus-box-shadow;
+  }
+  &:checked + label::before {
+    border: 1px solid $dark-blue-color;
+  }
+  &:checked + label::after {
+    opacity: 0.6;
   }
 }
