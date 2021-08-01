@@ -15,6 +15,7 @@ html {
 }
 
 body {
+  background-color: #f6f6f6;
   height: 100%;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -94,12 +95,6 @@ button {
 
 .content {
   flex: 1 0 auto;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: $content;
-  width: 100%;
 }
 
 //Модули

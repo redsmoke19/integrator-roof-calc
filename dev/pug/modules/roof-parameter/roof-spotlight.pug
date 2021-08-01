@@ -1,0 +1,23 @@
+.row.gx-0.gx-md-20.gy-20
+	.col-12.col-md-6.col-lg-4
+		.form__input-box
+			label.form__input-label(for="roofSizecornice") Ширина карнизного свеса, м
+			input.form__input-text._js-input-text(type="text" id="roofSizecornice" name="roofSizecornice" autocomplete="off" requared)
+			span.form__input-icon K
+	.col-12.col-md-6.col-lg-4
+		.form__input-box
+			label.form__input-label(for="roofSizeBoard") Ширина лобовой доски, м
+			input.form__input-text._js-input-text(type="text" id="roofSizeBoard" name="roofSizeBoard" autocomplete="off" requared)
+			span.form__input-icon M
+	.col-12
+		.row.gx-20
+			.col-6.col-md-3
+				.radio-list__item.w-100.p-0
+					input.radio-big(type="radio" name="spotlight-material" value="metal" id="spotlightMaterialMetal")
+					label.radio-big__label.w-100(for="spotlightMaterialMetal")
+						span.radio-list__name Металлический
+			.col-6.col-md-3
+				.radio-list__item.w-100.p-0
+					input.radio-big(type="radio" name="spotlight-material" value="pvh" id="spotlightMaterialPVH")
+					label.radio-big__label.w-100(for="spotlightMaterialPVH")
+						span.radio-list__name ПВХ

@@ -1,0 +1,25 @@
+.row.gx-0.gy-20.form__roof-size.roof-size
+	.col-12.col-md-7.order-md-2
+		.roof-size__image
+			img.roof-size__img(src="static/images/content/roof-odnoskat.png" width="350" height="250" alt="Односкатная крыша")
+	.col-12.col-md-5
+		.tooltip.mb-20
+			button(type="button").tooltip__button.tooltip__button--text Как правильно делать замер
+			span.tooltip__data-title Как делать замер
+			span.tooltip__data-text Произведите замер и внесите данные. Если конструкция кровли сложная, то ее разбивают на отдельные плоскости и замеряют все расстояния для раскроя материала и геометрического построения. При расчете особое внимание следует уделить не площади крыши, а размеру каждого ската.
+			a.tooltip__data-link(href="") Ссылка
+		include input-tabs
+		ul.form__checkbox-list
+			li.form__checkbox-box
+				input.form__checkbox.checkbox(type="checkbox" id="roofSizeInsulation" name="roofSizeInsulation")
+				label.form__checkbox-label.checkbox__label(for="roofSizeInsulation") Сделать расчет с утеплителем
+			li.form__checkbox-box
+				input.form__checkbox.checkbox._height-animation-trigger(type="checkbox" id="roofSizeSofits" name="roofSizeSofits")
+				label.form__checkbox-label.checkbox__label(for="roofSizeSofits") Сделать расчет cофита
+			li.form__checkbox-box._js-stropila-check
+				input.form__checkbox.checkbox(type="checkbox" id="roofSizeStropila" name="roofSizeStropila")
+				label.form__checkbox-label.checkbox__label(for="roofSizeStropila") Размер по стропилам
+				span.tooltip.d-inline-block.ms-10
+					button(type="button").tooltip__button.tooltip__button--right ?
+					span.tooltip__data-title Размер по стропилам
+					span.tooltip__data-text Если у вас размеры по стропилам, то мы добавим к длине ската 5см

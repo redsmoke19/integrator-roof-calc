@@ -1,6 +1,15 @@
 .radio-list {
+  @media screen and (min-width: $tablet-size) {
+    margin: 0 -5px;
+    width: auto;
+  }
   &__item {
     position: relative;
     width: auto;
+    @media screen and (min-width: $tablet-size) {
+      font-size: 12px;
+      padding: 0 5px;
+      width: 20%;
+    }
   }
 }

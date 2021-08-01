@@ -1,4 +1,13 @@
 .form {
+  &__fieldset {
+    border-bottom: 1px solid $gray-color;
+    margin: 0 -20px 30px;
+    padding: 0 20px 30px;
+    @media screen and (min-width: $tablet-size) {
+      margin: 0 0 30px;
+      padding: 0 0 30px;
+    }
+  }
   &__legend {
     font-size: 15px;
     font-weight: 700;
@@ -7,7 +16,91 @@
   }
   &__radio-container {
     margin: 0 -20px;
+    @media screen and (min-width: $tablet-size) {
+      margin: 0;
+    }
+  }
+  &__checkbox-box {
+    position: relative;
+  }
+  &__input-tab {
+    display: none;
+    &._active {
+      display: block;
+    }
+  }
+  &__input-box {
+    position: relative;
+    &._active, &._not-empty {
+      .form__input-label {
+        font-size: 10px;
+        top: 20%;
+        @media screen and (min-width: $tablet-size) {
+          font-size: 8px;
+        }
+      }
+    }
+    &._active {
+      .form__input-icon {
+        opacity: 1;
+      }
+    }
+  }
+  &__input-label {
+    font-size: 16px;
+    line-height: 1;
+    left: 20px;
+    opacity: .5;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all ease-out .2s;
+    @media screen and (min-width: $tablet-size) {
+      font-size: 12px;
+      left: 10px;
+    }
+  }
+  &__input-text {
+    padding: 20px 60px 15px 10px;
+    width: 100%;
+    @media screen and (min-width: $tablet-size) {
+      font-size: 12px;
+      padding: 15px 60px 5px 10px;
+    }
+  }
+  &__input-icon {
+    align-items: center;
+    background-color: $dark-blue-color;
+    border-radius: 50%;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    opacity: 0.2;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all ease-out .2s;
+    width: 30px;
+    @media screen and (min-width: $tablet-size) {
+      font-size: 12px;
+      height: 20px;
+      width: 20px;
+    }
+  }
+  &__button {
+    background-color: $dark-blue-color;
+    border: none;
+    border-radius: 10px;
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 15px;
+    width: 100%;
   }
 }
 @import './radio-list';
 @import './radio';
+@import './checkbox';

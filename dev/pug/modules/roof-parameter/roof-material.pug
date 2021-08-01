@@ -1,18 +1,29 @@
 .swiper-container.form__radio-container._js-roof-material
 	ul.form__radio-list.radio-list.swiper-wrapper
 		li.radio-list__item.swiper-slide
-			input.radio-big(type="radio" name="roof-material" value="odnoskat" id="roofMaterialMetal" checked)
-			label.radio-big__label(for="roofMaterialMetal")
+			input.radio-big(type="radio" name="roof-material" value="metallocherepitsa" id="roofMaterialMetalocherepitsa" checked)
+			label.radio-big__label(for="roofMaterialMetalocherepitsa")
 				span.radio-list__name Металлочерепица
 			.radio-list__tooltip.tooltip
 				button(type="button").tooltip__button ?
-				//- span.tooltip__data-text Форма близка к натуральной черепице. Она оптимально подходит для использования в различных климатических условиях для коттеджного и малоэтажного строительства. Вам доступны цвета по каталогу RAL, RR и покрытия с рисунком (под натуральное дерево, камень).
-				//- a.tooltip__data-link(href="#") Ссылка
+				span.tooltip__data-title Металлочерепица
+				span.tooltip__data-text Форма близка к натуральной черепице. Она оптимально подходит для использования в различных климатических условиях для коттеджного и малоэтажного строительства. Вам доступны цвета по каталогу RAL, RR и покрытия с рисунком (под натуральное дерево, камень).
+				a.tooltip__data-link(href="") Ссылка
 		li.radio-list__item.swiper-slide
-			input.radio-big(type="radio" name="roof-material" value="odnoskat" id="roofMaterialProflist")
-			label.radio-big__label(for="roofMaterialProflist")
+			input.radio-big(type="radio" name="roof-material" value="profnastil" id="roofMaterialProfnaslit")
+			label.radio-big__label(for="roofMaterialProfnaslit")
 				span.radio-list__name Профнастил
+			.radio-list__tooltip.tooltip
+				button(type="button").tooltip__button ?
+				span.tooltip__data-title Профнастил
+				span.tooltip__data-text Профнастил - представляет собой профилированные стальные листы с защитным полимерным и оцинкованным покрытиями, которые различаются высотой профиля и формой. Представленная продукция соответствует ГОСТ 24045-2010
+				a.tooltip__data-link(href="") Ссылка
 		li.radio-list__item.swiper-slide
-			input.radio-big(type="radio" name="roof-material" value="odnoskat" id="roofMaterialFalcevaya")
+			input.radio-big(type="radio" name="roof-material" value="falcevaya" id="roofMaterialFalcevaya")
 			label.radio-big__label(for="roofMaterialFalcevaya")
 				span.radio-list__name Фальцевая
+			.radio-list__tooltip.tooltip
+				button(type="button").tooltip__button ?
+				span.tooltip__data-title Фальцевая кровля
+				span.tooltip__data-text Главная особенность этого материала –легкость монтажа. Листы крепятся к обрешетке саморезами через отверстия вдоль замочной части кровли без использования специального оборудования.
+				a.tooltip__data-link(href="") Ссылка
