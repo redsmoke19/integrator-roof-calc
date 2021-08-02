@@ -28,18 +28,6 @@ section.roof-calculate.pt-50
 			ul.roof-calculate__steps.stage__steps
 			form.roof-calculate__form.form(action="#" method="POST")
 				.form__fieldset
-					h3.form__legend Выберите тип кровли
-					include ../../modules/roof-parameter/roof-type
-				.form__fieldset
-					h3.form__legend Материал
-					include ../../modules/roof-parameter/roof-material
-				.form__fieldset
-					h3.form__legend Размеры вашей кровли
-					include ../../modules/roof-parameter/roof-size
-				.form__fieldset._height-animation
-					h3.form__legend Введите размеры и материал софита
-					include ../../modules/roof-parameter/roof-spotlight
-				.col-12
-					button.form__button(type="button") Сделать расчет
-
-
+					h3.form__legend Выберите вид профиля и размер листов
+					p.form__text.mb-20 Над раскладкой кровли находятся переключатели профилей изделия, они позволит Вам выбрать профиль с учетом его рабочей ширины и запретных длин. Для просмотра раскладки листов на скате выберите скат, нажав на него. С помощью стрелок изменяйте длину листов в соответствии с вашей потребностью для выбранного ската.
+					include ../../modules/roof-parameter/roof-profile

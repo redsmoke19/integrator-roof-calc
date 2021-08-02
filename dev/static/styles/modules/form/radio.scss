@@ -76,3 +76,55 @@
     opacity: .6;
   }
 }
+
+.radio-check {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  left: -9999px;
+  & + label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+  }
+  & + label::before {
+    background-color: rgba(232, 236, 244, 0.2);
+    border: 2px solid $gray-color;
+    border-radius: 3px;
+    content: '';
+    height: 24px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+  }
+  &:focus + label::before {
+    box-shadow: $input-btn-focus-box-shadow;
+  }
+  &:checked + label::before {
+    border: 2px solid $dark-blue-color;
+  }
+  &:checked + label::after,
+  &:not(:checked) + label::after {
+    background-color: $dark-blue-color;
+    border-radius: 3px;
+    content: '';
+    left: 4px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    transition: all ease-out 0.15s;
+    width: 16px;
+  }
+  &:not(:checked) + label::after {
+    opacity: 0;
+  }
+  &:checked + label::after {
+    opacity: 1;
+  }
+}

@@ -143,9 +143,16 @@
   const getChangeRoofImages = () => {
     const roofButtons = document.querySelectorAll('[data-roof-type]');
     const roofImage = document.querySelector('.roof-size__img');
+    const roofSizedInput = document.querySelectorAll('._js-input-text');
     roofButtons.forEach(item => {
       item.addEventListener('click', () => {
         const srcPath = item.getAttribute('data-roof-type');
+        roofImage.src = `./static/images/content/${srcPath}.png`;
+      });
+    });
+    roofSizedInput.forEach(item => {
+      item.addEventListener('focus', () => {
+        const srcPath = item.getAttribute('data-roof-size-image');
         roofImage.src = `./static/images/content/${srcPath}.png`;
       });
     });

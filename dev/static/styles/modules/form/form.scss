@@ -14,6 +14,15 @@
     line-height: 20px;
     margin: 0 0 20px 0;
   }
+  &__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  &__text {
+    color: rgba($black, .5);
+    font-size: 12px;
+    line-height: 14px;
+  }
   &__radio-container {
     margin: 0 -20px;
     @media screen and (min-width: $tablet-size) {
@@ -24,14 +33,12 @@
     position: relative;
   }
   &__input-tab {
-    // display: none;
     opacity: 0;
     top: -9999px;
     left: -9999px;
     right: 9999px;
     position: absolute;
     &._active {
-      // display: block;
       top: 0;
       left: 0;
       right: 0;

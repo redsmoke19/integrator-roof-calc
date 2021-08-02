@@ -13,3 +13,12 @@
     }
   }
 }
+
+.radio-check-list {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  &__item {
+    position: relative;
+  }
+}
