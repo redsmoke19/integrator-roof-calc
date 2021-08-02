@@ -1,5 +1,6 @@
 ._height-animation {
   --max-height: 0;
+
   overflow: hidden;
   max-height: var(--max-height);
   transition: all ease-out .4s;

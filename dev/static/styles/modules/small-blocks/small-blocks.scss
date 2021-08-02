@@ -15,6 +15,53 @@
     padding: 20px;
     @media screen and (min-width: $tablet-size) {
       border-radius: 10px;
+      overflow: hidden;
     }
+  }
+}
+
+.steps-list {
+  display: none;
+  @media screen and (min-width: $tablet-size) {
+    border-radius: 10px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .07);
+    display: flex;
+    margin: -20px -20px 0;
+    position: relative;
+    &::before {
+      background: repeating-linear-gradient(30deg, #fff, #fff 10px, #e8ecf4 10px, #e8ecf4 20px);
+      content: '';
+      height: 10px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+  &__item {
+    display: none;
+    @media screen and (min-width: $tablet-size) {
+      display: flex;
+      color: $gray-color;
+      flex: 0 0 33.333%;
+      padding: 30px 20px 20px;
+      position: relative;
+    }
+    &--active {
+      color: $black;
+      &::before {
+        background-color: rgba($dark-blue-color, .7);
+        content: '';
+        height: 10px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    }
+  }
+  &__text {
+    font-size: 10px;
+    line-height: 12px;
   }
 }

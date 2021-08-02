@@ -99,7 +99,9 @@
       width: 15px;
     }
   }
-  &__data-title, &__data-text, &__data-link {
+  &__data-title,
+  &__data-text,
+  &__data-link {
     display: none;
   }
 }

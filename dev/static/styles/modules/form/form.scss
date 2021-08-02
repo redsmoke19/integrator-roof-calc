@@ -24,14 +24,26 @@
     position: relative;
   }
   &__input-tab {
-    display: none;
+    // display: none;
+    opacity: 0;
+    top: -9999px;
+    left: -9999px;
+    right: 9999px;
+    position: absolute;
     &._active {
-      display: block;
+      // display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      opacity: 1;
+      position: relative;
+      transition: opacity .35s ease;
     }
   }
   &__input-box {
     position: relative;
-    &._active, &._not-empty {
+    &._active,
+    &._not-empty {
       .form__input-label {
         font-size: 10px;
         top: 20%;
@@ -76,7 +88,7 @@
     display: flex;
     justify-content: center;
     height: 30px;
-    opacity: 0.2;
+    opacity: .2;
     position: absolute;
     right: 20px;
     top: 50%;
