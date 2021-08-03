@@ -1,24 +1,37 @@
-.selected-product-list {
+.basket-section {
+  &__title {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 20px;
+  }
+  &__goods {
+    margin: 0 0 30px 0;
+  }
   &__item {
-    border-width: 1px 0;
-    border-style: solid;
-    border-color: $gray-color;
-    margin: 0 -20px;
-    padding: 30px 20px;
-    &:not(:first-child) {
-      border-width: 0 0 1px 0;
+    background-color: $white;
+    box-shadow: 0 0 4.2px 0 rgba(0, 0, 0, .07);
+    &:not(:last-child) {
+      margin: 0 0 20px 0;
     }
     @media screen and (min-width: $tablet-size) {
+      border-radius: 10px;
+    }
+  }
+  &__product {
+    padding: 20px;
+    @media screen and (min-width: $tablet-size) {
       display: flex;
+      width: 100%;
     }
   }
   &__picture {
     float: left;
-    min-height: 65px;
-    max-height: 65px;
     margin: 0 30px 20px 0;
-    min-width: 93px;
+    max-height: 65px;
     max-width: 93px;
+    min-height: 65px;
+    min-width: 93px;
     @media screen and (min-width: $tablet-size) {
       float: unset;
       margin: 0;
@@ -33,7 +46,7 @@
     margin: 0 0 30px 0;
     @media screen and (min-width: $tablet-size) {
       margin: 0;
-      padding: 0 20px;
+      padding: 0 40px 0 20px;
     }
   }
   &__link {
@@ -100,27 +113,28 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 22px;
-    margin: 0 0 30px 0;
+    white-space: nowrap;
     @media screen and (min-width: $tablet-size) {
       font-size: 18px;
       line-height: 26px;
-      margin: 0 0 15px 0;
-    }
-    @media screen and (min-width: $desktop-size) {
-      margin: 0 30px 0 0;
     }
   }
-  &__button {
-    background-color: $dark-blue-color;
-    border: none;
-    border-radius: 10px;
-    color: $white;
+  &__total {
+    border-top: 1px solid $gray-color;
+    // display: flex;
+    // flex-wrap: wrap;
+    padding: 0 20px 20px;
+  }
+  &__count {
+    color: $text-gray-color;
     display: block;
-    font-size: 16px;
-    line-height: 20px;
-    padding: 15px 20px;
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
+    // flex: 0 0 50%;
+    font-size: 12px;
+    line-height: 22px;
+    margin-top: 15px;
+    strong {
+      color: $black;
+      font-size: 14px;
+    }
   }
 }
