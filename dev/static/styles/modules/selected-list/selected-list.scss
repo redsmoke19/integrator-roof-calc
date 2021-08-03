@@ -1,0 +1,111 @@
+.selected-product-list {
+  &__item {
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: $gray-color;
+    margin: 0 -20px;
+    padding: 20px;
+    @media screen and (min-width: $tablet-size) {
+      display: flex;
+    }
+  }
+  &__picture {
+    float: left;
+    height: 65px;
+    margin: 0 30px 20px 0;
+    width: 93px;
+    @media screen and (min-width: $tablet-size) {
+      float: unset;
+      margin: 0;
+    }
+  }
+  &__img {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+  }
+  &__content {
+    margin: 0 0 30px 0;
+    @media screen and (min-width: $tablet-size) {
+      margin: 0;
+      padding: 0 20px;
+    }
+  }
+  &__link {
+    color: $black;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    min-height: 65px;
+    margin: 0 0 20px 0;
+    text-decoration: none;
+    @media screen and (min-width: $tablet-size) {
+      min-height: unset;
+    }
+  }
+  &__info-list {
+    align-items: center;
+    display: flex;
+  }
+  &__info-item {
+    color: $text-gray-color;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    &:not(:last-child) {
+      margin: 0 10px 0 0;
+    }
+    &:not(:first-child) {
+      &::before {
+        content: '/';
+        margin: 0 10px 0 0;
+      }
+    }
+    @media screen and (min-width: $tablet-size) {
+      font-size: 13px;
+      line-height: 18px;
+    }
+  }
+  &__price-panel {
+    @media screen and (min-width: $tablet-size) {
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    @media screen and (min-width: $desktop-size) {
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 0 0 auto;
+    }
+  }
+  &__price {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    margin: 0 0 30px 0;
+    @media screen and (min-width: $tablet-size) {
+      line-height: 26px;
+      margin: 0 0 15px 0;
+    }
+    @media screen and (min-width: $desktop-size) {
+      margin: 0 30px 0 0;
+    }
+  }
+  &__button {
+    background-color: $dark-blue-color;
+    border: none;
+    border-radius: 10px;
+    color: $white;
+    display: block;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+  }
+}

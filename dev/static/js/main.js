@@ -246,6 +246,19 @@
       });
     });
   };
+  const getLayoutControls = () => {
+    const leyoutControlsButtons = document.querySelectorAll('.layout-control__button');
+    leyoutControlsButtons.forEach(item => {
+      item.addEventListener('click', () => {
+        if (item.classList.contains('_minus')) {
+          item.nextElementSibling.value = +(item.nextElementSibling.value - 0.01).toFixed(2);
+        }
+        if (item.classList.contains('_plus')) {
+          item.previousElementSibling.value = +(+(item.previousElementSibling.value) + 0.01).toFixed(2);
+        }
+      });
+    });
+  };
   getSlider();
   getTooltip();
   getChangeRoofImages();
@@ -253,4 +266,5 @@
   getTransitionHeight();
   getTabs();
   getFolderRoofTrigger();
+  getLayoutControls();
 })();

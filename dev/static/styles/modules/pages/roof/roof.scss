@@ -6,7 +6,7 @@
     max-height: 250px;
     width: 100%;
     @media screen and (min-width: $tablet-size) {
-      max-height: unset;
+      max-height: 450px;
     }
   }
   &__img {

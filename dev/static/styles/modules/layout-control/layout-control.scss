@@ -1,0 +1,53 @@
+.layout-control {
+  border: 1px solid $dark-blue-color;
+  border-radius: 10px;
+  padding: 20px;
+  &:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
+  &__title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0 0 20px 0;
+  }
+  &__name {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  &__controls {
+    align-items: center;
+    display: flex;
+  }
+  &__button {
+    align-items: center;
+    background-color: rgba($gray-color, .2);
+    border: 1px solid rgba($black, .5);
+    display: flex;
+    font-size: 14px;
+    line-height: 1;
+    justify-content: center;
+    height: 30px;
+    padding: 0;
+    width: 30px;
+    &--minus {
+      border-radius: 5px 0 0 5px;
+    }
+    &--plus {
+      border-radius: 0 5px 5px 0;
+    }
+  }
+  &__input {
+    background-color: rgba($gray-color, .2);
+    border: 1px solid rgba($black, .5);
+    border-left: none;
+    border-right: none;
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 7px 5px;
+    text-align: center;
+    width: 50px;
+  }
+}

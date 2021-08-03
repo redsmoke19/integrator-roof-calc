@@ -22,12 +22,27 @@ section.roof-calculate.pt-50
 				.form__fieldset._height-animation
 					h3.form__legend Введите размеры и материал софита
 					include ../../modules/roof-parameter/roof-spotlight
-				.col-12
-					button.form__button(type="button") Сделать расчет
+				.col-12.col-md-6.col-lg-3.mx-md-auto
+					button.form__button.mx-md-auto(type="button") Сделать расчет
 		.roof-calculate__inner.stage__inner.mb-30
-			ul.roof-calculate__steps.stage__steps
+			ul.roof-calculate__steps.stage__steps.steps-list.mb-30
+				li.steps-list__item.steps-list__item--active
+					span.steps-list__text 01. Конфигурация кровки
+				li.steps-list__item.steps-list__item--active
+					span.steps-list__text 02. Выбор профиля и размера листа
+				li.steps-list__item
+					span.steps-list__text 03. Ваш итоговый расчет кровли
 			form.roof-calculate__form.form(action="#" method="POST")
 				.form__fieldset
 					h3.form__legend Выберите вид профиля и размер листов
 					p.form__text.mb-20 Над раскладкой кровли находятся переключатели профилей изделия, они позволит Вам выбрать профиль с учетом его рабочей ширины и запретных длин. Для просмотра раскладки листов на скате выберите скат, нажав на него. С помощью стрелок изменяйте длину листов в соответствии с вашей потребностью для выбранного ската.
 					include ../../modules/roof-parameter/roof-profile
+				.form__fieldset.form__fieldset--no-border
+					h3.form__legend Управление раскладкой листов
+					include ../../modules/layout-control/layout-control
+		.roof-calculate__inner.stage__inner.mb-30
+			form.roof-calculate__form.form(action="#" method="POST")
+				.form__fieldset.form__fieldset--no-border
+					h3.form__legend Выберите толщину металла, покрытие и цвет
+					include ../../modules/selected-list/selected-list
+					p.form__note Мы не рекомендует закрывать лобовую доску коричневыми софитами (софит на лобовую доску монтируется при размере больше 187 мм).

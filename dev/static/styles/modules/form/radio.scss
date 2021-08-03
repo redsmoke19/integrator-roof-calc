@@ -85,23 +85,31 @@
   left: -9999px;
   & + label {
     display: inline-block;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 16px;
     position: relative;
-    padding-left: 35px;
+    padding-left: 25px;
     cursor: pointer;
+    @media screen and (min-width: $tablet-size) {
+      font-size: 12px;
+      padding-left: 25px;
+    }
   }
   & + label::before {
     background-color: rgba(232, 236, 244, 0.2);
     border: 2px solid $gray-color;
     border-radius: 3px;
     content: '';
-    height: 24px;
+    height: 18px;
     left: 0;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 24px;
+    width: 18px;
+    @media screen and (min-width: $tablet-size) {
+      height: 18px;
+      width: 18px;
+    }
   }
   &:focus + label::before {
     box-shadow: $input-btn-focus-box-shadow;
@@ -115,11 +123,16 @@
     border-radius: 3px;
     content: '';
     left: 4px;
-    height: 16px;
+    height: 10px;
     position: absolute;
-    top: 0;
+    top: 3px;
     transition: all ease-out 0.15s;
-    width: 16px;
+    width: 10px;
+    @media screen and (min-width: $tablet-size) {
+      height: 10px;
+      width: 10px;
+      top: 3px;
+    }
   }
   &:not(:checked) + label::after {
     opacity: 0;
