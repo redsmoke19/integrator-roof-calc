@@ -1,0 +1,33 @@
+.popup.popup_change-material
+	.popup__content
+		.popup__body.popup__body--big
+			button.popup__close
+			h2.popup__title.mb-10 Вариации металлочерепицы
+			p.popup__text.mb-30 Выберете необходимые параметры: толщина, цвет, покрытие. Найдите подходящий для вас товар.
+			.change-material__inner
+				form.change-material__form(action="#" method="POST")
+					.change-material__accordion.material-filter(id="changeMaterialAccodrion")
+						ul.material-filter__list
+							li.material-filter__item
+								button.material-filter__button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#changeMaterialAccodrionColor" aria-expanded="false" aria-controls="changeMaterialAccodrionColor")
+									span.material-filter__name Цвет:
+									span.material-filter__value выбрать
+							li.material-filter__item
+								button.material-filter__button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#changeMaterialAccodrionCoating" aria-expanded="false" aria-controls="changeMaterialAccodrionCoating")
+									span.material-filter__name Покрытие:
+									span.material-filter__value выбрать
+							li.material-filter__item
+								button.material-filter__button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#changeMaterialAccodrionThickness" aria-expanded="false" aria-controls="changeMaterialAccodrionThickness")
+									span.material-filter__name Толщина:
+									span.material-filter__value выбрать
+						ul.material-filter__options-list
+							li.material-filter__options-item.collapse(id="changeMaterialAccodrionColor" data-bs-parent="#changeMaterialAccodrion")
+								include material-color
+							li.material-filter__options-item.collapse(id="changeMaterialAccodrionCoating" data-bs-parent="#changeMaterialAccodrion")
+								.material-filter__body
+									h2 Ну тут какой то текст
+							li.material-filter__options-item.collapse(id="changeMaterialAccodrionThickness" data-bs-parent="#changeMaterialAccodrion")
+								.material-filter__body
+									h2 Ну тут какой то текст
+
+

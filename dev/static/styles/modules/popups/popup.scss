@@ -74,10 +74,20 @@
       max-width: 640px;
       width: 50%;
     }
+    &--big {
+      background-color: #f6f6f6;
+      padding: 50px 20px 50px;
+      width: 100%;
+      @media screen and (min-width: $tablet-size) {
+        max-width: 1200px;
+        padding: 50px 30px 50px;
+        width: 95%;
+      }
+    }
   }
   &__close {
     align-items: center;
-    background-color: $white;
+    background-color: transparent;
     border: none;
     cursor: pointer;
     display: flex;
@@ -138,3 +148,4 @@
 }
 @import './basket-add/basket-add';
 @import './added-list/added-list';
+@import './change-material/change-material';

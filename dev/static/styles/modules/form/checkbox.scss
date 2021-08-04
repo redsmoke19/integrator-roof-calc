@@ -24,9 +24,6 @@
     top: calc(50% - 7px);
     width: 14px;
   }
-  &:focus + label::before {
-    box-shadow: $input-btn-focus-box-shadow;
-  }
   &:checked + label::before {
     background-color: $dark-blue-color;
     border-color: $dark-blue-color;
@@ -50,6 +47,15 @@
   }
   &:checked + label::after {
     opacity: 1;
+  }
+  &__bg {
+    display: inline-block;
+    height: 20px;
+    left: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
   }
 }
 

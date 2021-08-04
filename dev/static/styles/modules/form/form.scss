@@ -89,11 +89,15 @@
     }
   }
   &__input-text {
+    border: 1px solid $dark-blue-color;
     padding: 20px 60px 15px 10px;
     width: 100%;
     @media screen and (min-width: $tablet-size) {
       font-size: 12px;
       padding: 15px 60px 5px 10px;
+    }
+    &:focus {
+      box-shadow: 0 0 5px 1px rgba(0, 0, 0, .6);
     }
   }
   &__input-icon {

@@ -112,7 +112,7 @@
     }
   }
   &:focus + label::before {
-    box-shadow: $input-btn-focus-box-shadow;
+    // box-shadow: $input-btn-focus-box-shadow;
   }
   &:checked + label::before {
     border: 2px solid $dark-blue-color;

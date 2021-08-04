@@ -1,16 +1,7 @@
 /* eslint-disable no-undef */
 (function () {
   'use strict';
-  const body = document.querySelector('body');
   let unlock = true;
-  function bodyLock(delay) {
-    const body = document.querySelector('body');
-    if (body.classList.contains('_lock')) {
-      bodyLockRemove(delay);
-    } else {
-      bodyLockAdd(delay);
-    }
-  };
   function bodyLockRemove(delay) {
     const body = document.querySelector('body');
     if (unlock) {
