@@ -1,0 +1,92 @@
+.basket-invoice {
+  background-color: $white;
+  box-shadow: 0 0 4.2px 0 rgba(0, 0, 0, .07);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  &__title {
+    border-bottom: 1px solid $gray-color;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    margin: 0 -20px 30px;
+    padding: 0 20px 20px;
+  }
+  &__list {
+    border-bottom: 1px solid $gray-color;
+    margin: 0 -20px 30px;
+    padding: 0 20px 30px;
+  }
+  &__item {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    &:not(:last-child) {
+      margin: 0 0 10px 0;
+    }
+  }
+  &__name {
+    font-size: 16px;
+    line-height: 20px;
+    @media screen and (min-width: 1000px) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  &__value {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  &__total {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 30px 0;
+  }
+  &__price {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+  }
+  &__add-basket {
+    background-color: $dark-blue-color;
+    border-radius: 10px;
+    color: $white;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    margin: 0 0 30px 0;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+  }
+  &__controls-item {
+    &:not(:last-child) {
+      margin: 0 0 20px 0;
+    }
+  }
+  &__controls-link {
+    align-items: center;
+    background-color: rgba($gray-color, .5);
+    border: 1px solid $gray-color;
+    border-radius: 10px;
+    color: $black;
+    display: flex;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    justify-content: center;
+    padding: 15px;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+  }
+  &__controls-icon {
+    margin: 0 20px 0 0;
+  }
+}

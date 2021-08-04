@@ -1,4 +1,8 @@
 .basket-section {
+  @media screen and (min-width: 1000px) {
+    align-items: flex-start;
+    display: flex;
+  }
   &__title {
     font-size: 15px;
     font-weight: 700;
@@ -20,9 +24,13 @@
   }
   &__product {
     padding: 20px;
+    position: relative;
     @media screen and (min-width: $tablet-size) {
       display: flex;
       width: 100%;
+    }
+    @media screen and (min-width: $desktop-size) {
+      align-items: center;
     }
   }
   &__picture {
@@ -45,8 +53,14 @@
   &__content {
     margin: 0 0 30px 0;
     @media screen and (min-width: $tablet-size) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       margin: 0;
       padding: 0 40px 0 20px;
+    }
+    @media screen and (min-width: 1000px) {
+      padding: 0 30px 0 20px;
     }
   }
   &__link {
@@ -57,17 +71,23 @@
     line-height: 18px;
     line-height: 26px;
     min-height: 65px;
-    margin: 0 0 20px 0;
+    padding-right: 20px;
     text-decoration: none;
     @media screen and (min-width: $tablet-size) {
       font-size: 16px;
       line-height: 24px;
       min-height: unset;
+      padding: 0;
+    }
+    @media screen and (min-width: 1000px) {
+      font-size: 14px;
+      line-height: 20px;
     }
   }
   &__info-list {
     align-items: center;
     display: flex;
+    margin: 20px 0 0 0;
   }
   &__info-item {
     color: $text-gray-color;
@@ -93,14 +113,21 @@
       font-size: 13px;
       line-height: 18px;
     }
+    @media screen and (min-width: 1000px) {
+      font-size: 9px;
+    }
+    @media screen and (min-width: $desktop-size) {
+      font-size: 11px;
+    }
   }
   &__price-panel {
     @media screen and (min-width: $tablet-size) {
       align-items: flex-end;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       margin: 0 0 0 auto;
+      padding-right: 20px;
     }
     @media screen and (min-width: $desktop-size) {
       align-items: center;
@@ -118,17 +145,44 @@
       font-size: 18px;
       line-height: 26px;
     }
+    @media screen and (min-width: 1000px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  &__delete {
+    background-color: transparent;
+    border: none;
+    height: 20px;
+    padding: 0;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    &::before,
+    &::after {
+      background-color: $gray-color;
+      content: '';
+      height: 15px;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      width: 2px;
+    }
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
   }
   &__total {
     border-top: 1px solid $gray-color;
-    // display: flex;
-    // flex-wrap: wrap;
     padding: 0 20px 20px;
   }
   &__count {
     color: $text-gray-color;
     display: block;
-    // flex: 0 0 50%;
     font-size: 12px;
     line-height: 22px;
     margin-top: 15px;
@@ -136,5 +190,13 @@
       color: $black;
       font-size: 14px;
     }
+    @media screen and (min-width: 1000px) {
+      font-size: 9px;
+      line-height: 14px;
+    }
+    @media screen and (min-width: $desktop-size) {
+      font-size: 11px;
+    }
   }
 }
+@import './basket-invoice';

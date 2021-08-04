@@ -1,0 +1,43 @@
+.popup-added-list {
+  display: flex;
+  flex-direction: column;
+  &__item {
+    align-items: center;
+    display: flex;
+    &:not(:last-child) {
+      margin: 0 0 25px 0;
+    }
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+  }
+  &__icon {
+    flex-shrink: 0;
+    margin: 0 15px 0 0;
+    @media screen and (min-width: $tablet-size) {
+      margin: 0 30px 0 0;
+    }
+  }
+  &__name {
+    font-size: 12px;
+    line-height: 16px;
+    @media screen and (min-width: $tablet-size) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  &__count {
+    color: $gray-color;
+    font-size: 10px;
+    line-height: 14px;
+    @media screen and (min-width: $tablet-size) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  &__price {
+    margin: 0 0 0 auto;
+  }
+}

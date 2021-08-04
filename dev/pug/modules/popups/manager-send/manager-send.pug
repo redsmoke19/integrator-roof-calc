@@ -1,0 +1,19 @@
+.popup.popup_manager-send
+	.popup__content
+		.popup__body
+			button.popup__close
+			h2.popup__title.mb-10 Отправить расчеты менеджеру
+			p.popup__text.mb-30 Напишите нам, ответим Вам в ближайшее время
+			form.popup__form(action="#" method="POST")
+				.form__input-box.mb-20
+					label.form__input-label(for="managerSendYouName") Имя*
+					input.form__input-text._js-input-text(type="text" id="managerSendYouName" name="managerSendYouName" autocomplete="off" requared)
+				.form__input-box.mb-20
+					label.form__input-label(for="managerSendYouPhone") Телефон*
+					input.form__input-text._js-input-text(type="tel" id="managerSendYouPhone" name="managerSendYouPhone" autocomplete="off" requared)
+				.form__input-box.mb-20
+					label.form__input-label(for="managerSendYouText") Сообщение*
+					textarea.form__input-text._js-input-text(id="managerSendYouText" name="managerSendYouText" autocomplete="off" requared)
+				p.popup__note.mb-30 Нажимая кнопку «Отправить» вы даете своё согласие на обработку персональных данных в соответствии с Федеральным законом от 27.07.2006 года №152-Ф3 "О персональных данных" на условиях и для целей, определённых в #[a(href="#") Согласии на обработку персональных данных]*.
+				button.popup__submit(type="submit") Отправить
+

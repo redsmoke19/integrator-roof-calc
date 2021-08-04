@@ -1,5 +1,56 @@
-.basket-section__goods
-	include goods/list-1
-	h3.basket-section__title Доборные элементы
-	include goods/list-2
-.basket-section__invoice
+.col-12.col-lg-8
+	.basket-section__goods
+		include goods/list-1
+		h3.basket-section__title Доборные элементы
+		include goods/list-2
+		h3.basket-section__title Софиты
+		include goods/list-3
+		h3.basket-section__title Саморезы
+		include goods/list-4
+		h3.basket-section__title Утеплитель
+		include goods/list-5
+.col-12.col-lg-4
+	.basket-section__invoice.basket-invoice
+		h3.basket-invoice__title Счет / заказ
+		ul.basket-invoice__list
+			li.basket-invoice__item
+				span.basket-invoice__name Площадь кровли
+				span.basket-invoice__value 4.1
+			li.basket-invoice__item
+				span.basket-invoice__name Площадь листов полная, м#[sup 2]
+				span.basket-invoice__value 4.84
+			li.basket-invoice__item
+				span.basket-invoice__name Площадь листов полезная, м#[sup 2]
+				span.basket-invoice__value 4.51
+		ul.basket-invoice__list
+			li.basket-invoice__item
+				span.basket-invoice__name Листы, ед.
+				span.basket-invoice__value 2
+			li.basket-invoice__item
+				span.basket-invoice__name Доборные элементы, ед.
+				span.basket-invoice__value 7
+			li.basket-invoice__item
+				span.basket-invoice__name Саморезу, уп.
+				span.basket-invoice__value 3
+			li.basket-invoice__item
+				span.basket-invoice__name Комплектующие, ед.
+				span.basket-invoice__value 8
+			li.basket-invoice__item
+				span.basket-invoice__name Утеплитель, ед.
+				span.basket-invoice__value 6
+			li.basket-invoice__item
+				span.basket-invoice__name Софиты и мопл., ед
+				span.basket-invoice__value 41
+		.basket-invoice__total
+			span.basket-invoice__name Общая стоимость
+			span.basket-invoice__price 97739.42 ₽
+		a.basket-invoice__add-basket._popup-link(href="#basket-add") Добавить в корзину
+		ul.basket-invoice__controls-list
+			li.basket-invoice__controls-item
+				a.basket-invoice__controls-link(href="#")
+					+icon('icon-pdf', 'basket-invoice__controls-icon', '30', '30')
+					span Скачать расчет в формате PDF
+			li.basket-invoice__controls-item
+				a.basket-invoice__controls-link._popup-link(href="#manager-send")
+					+icon('icon-share', 'basket-invoice__controls-icon', '30', '30')
+					span Отправить расчет менеджеру
