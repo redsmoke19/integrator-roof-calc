@@ -83,7 +83,7 @@
   appearance: none;
   position: absolute;
   left: -9999px;
-  & + label {
+  + label {
     display: inline-block;
     font-size: 12px;
     line-height: 16px;
@@ -95,8 +95,8 @@
       padding-left: 25px;
     }
   }
-  & + label::before {
-    background-color: rgba(232, 236, 244, 0.2);
+  + label::before {
+    background-color: rgba(232, 236, 244, .2);
     border: 2px solid $gray-color;
     border-radius: 3px;
     content: '';
@@ -126,7 +126,7 @@
     height: 10px;
     position: absolute;
     top: 3px;
-    transition: all ease-out 0.15s;
+    transition: all ease-out .15s;
     width: 10px;
     @media screen and (min-width: $tablet-size) {
       height: 10px;
