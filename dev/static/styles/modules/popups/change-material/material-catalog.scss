@@ -1,0 +1,117 @@
+.material-catalog {
+  &__list {
+    margin: -20px;
+    @media screen and (min-width: $tablet-size) {
+      margin: 0 -20px -20px;
+    }
+  }
+}
+
+.material-list {
+  display: flex;
+  flex-wrap: wrap;
+  &__item {
+    outline: 1px solid $gray-color;
+    width: 50%;
+  }
+  &__inner {
+    padding: 20px;
+  }
+  &__visual {
+    position: relative;
+    height: 150px;
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+  &__img {
+    display: block;
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+  }
+  &__hit {
+    align-items: center;
+    background-color: $blue-color;
+    border-radius: 5px;
+    color: $white;
+    display: flex;
+    font-size: 10px;
+    font-weight: 600;
+    height: 20px;
+    justify-content: center;
+    line-height: -1;
+    left: 0;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    width: 40px;
+  }
+  &__star {
+    align-items: center;
+    border: 1px solid $gray-color;
+    border-radius: 10px;
+    bottom: 0;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    width: 40px;
+  }
+  &__star-text {
+    display: block;
+    font-size: 10px;
+    line-height: -1;
+    margin: 0 0 0 5px;
+  }
+  &__description {
+    margin: 0 0 20px 0;
+  }
+  &__title {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  &__buy-panel {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+  }
+  &__price {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+  }
+  &__choose {
+    background-color: $dark-blue-color;
+    border: none;
+    border-radius: 10px;
+    color: $white;
+    font-size: 9px;
+    line-height: -1;
+    padding: 8px;
+    width: auto;
+  }
+  &__info-panel {
+    align-items: center;
+    display: flex;
+    font-size: 8px;
+    line-height: 12px;
+    justify-content: space-between;
+  }
+  &__status {
+    align-items: center;
+    display: flex;
+  }
+  &__status-icon {
+    margin: 0 5px 0 0;
+  }
+  &__code {
+    align-items: center;
+    display: flex;
+  }
+  &__code-value {
+    display: block;
+    margin: 0 0 0 5px;
+  }
+}

@@ -24,6 +24,9 @@
     top: calc(50% - 7px);
     width: 14px;
   }
+  &:disabled + label {
+    opacity: .5;
+  }
   &:checked + label::before {
     background-color: $dark-blue-color;
     border-color: $dark-blue-color;

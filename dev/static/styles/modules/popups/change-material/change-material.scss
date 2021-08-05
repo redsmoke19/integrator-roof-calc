@@ -1,7 +1,7 @@
 .change-material {
   &__inner {
     background-color: $white;
-    border-radius: 10px;
+    // border-radius: 10px;
     box-shadow: 0 0 4.2px 0 rgba(0, 0, 0, .07);
     margin: 0 -20px 20px;
     padding: 20px;
@@ -11,73 +11,5 @@
     }
   }
 }
-
-.material-filter {
-  &__list {
-    display: flex;
-    flex-direction: column;
-    margin: -10px 0 0 0;
-    @media screen and (min-width: $tablet-size) {
-      flex-direction: row;
-      margin: 0 -5px;
-    }
-  }
-  &__item {
-    margin: 10px 0 0 0;
-    width: 100%;
-    @media screen and (min-width: $tablet-size) {
-      padding: 0 5px;
-      width: 33.333%;
-    }
-  }
-  &__button {
-    align-items: center;
-    background-color: transparent;
-    border: 1px solid $gray-color;
-    display: flex;
-    padding: 10px 30px 10px 10px;
-    width: 100%;
-    &::after {
-      flex-shrink: 0;
-      width: 1.25rem;
-      height: 1.25rem;
-      margin-left: auto;
-      content: "";
-      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='111c47'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
-      background-repeat: no-repeat;
-      background-size: 1.25rem;
-      transition: transform .2s ease-in-out;
-    }
-    &:not(.collapsed) {
-      border-color: $dark-blue-color;
-      &::after {
-        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='111c47'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
-        transform: rotate(-180deg);
-      }
-    }
-  }
-  &__name {
-    font-size: 14px;
-    line-height: 18px;
-  }
-  &__value {
-    color: rgba($black, .5);
-    display: block;
-    font-size: 14px;
-    line-height: 18px;
-    margin: 0 0 0 10px;
-  }
-  &__options-list {
-    padding: 20px 0;
-  }
-  &__options {
-    columns: 2;
-    margin: 0 0 -10px;
-    @media screen and (min-width: $tablet-size) {
-      columns: 4;
-    }
-  }
-  &__option {
-    margin: 0 0 10px 0;
-  }
-}
+@import './material-filter';
+@import './material-catalog';

@@ -31,6 +31,14 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  transition: all ease-out .2s;
+  &:hover {
+    color: initial;
+    opacity: .7;
+  }
+}
+
 body,
 h1,
 h2,

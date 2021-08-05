@@ -1,0 +1,17 @@
+.material-catalog
+	.material-catalog__top.d-none.d-md-block
+		.material-catalog__sorting
+			.material-catalog__sort
+				button.material-catalog__button.dropdown-toggle(type="button" id="materialCatalogSort" data-bs-toggle="dropdown" aria-expanded="false") Кнопка выпадающего списка
+				ul.dropdown-menu(aria-labelledby="materialCatalogSort")
+					li
+						a.dropdown-item(href="#") По рейтингу
+					li
+						a.dropdown-item(href="#") По цене возрастанию
+					li
+						a.dropdown-item(href="#") По цене убыванию
+					li
+						a.dropdown-item(href="#") Сначала акции
+		.material-catalog__switcher
+	.material-catalog__list
+		include material-list

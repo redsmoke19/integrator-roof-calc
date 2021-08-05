@@ -47,10 +47,10 @@
     border-radius: 10px;
     box-shadow: 0 0 12px 8px rgba(34, 60, 80, .2);
     max-width: 350px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     position: fixed;
     right: 10px;
-    z-index: 10;
+    z-index: 100;
   }
   &__title {
     background-color: $dark-blue-color;
@@ -59,13 +59,13 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
-    margin: 0 0 20px 0;
-    padding: 20px 10px;
+    margin: 0 0 10px 0;
+    padding: 10px;
   }
   &__text {
     font-size: 12px;
     line-height: 15px;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
     padding: 0 10px;
   }
   &__link {
@@ -83,7 +83,7 @@
     padding: 0;
     position: absolute;
     right: 15px;
-    top: 15px;
+    top: 12px;
     width: 15px;
     &::before {
       background-color: $white;

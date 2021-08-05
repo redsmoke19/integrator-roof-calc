@@ -5,8 +5,8 @@
 			h2.popup__title.mb-10 Вариации металлочерепицы
 			p.popup__text.mb-30 Выберете необходимые параметры: толщина, цвет, покрытие. Найдите подходящий для вас товар.
 			.change-material__inner
-				form.change-material__form(action="#" method="POST")
-					.change-material__accordion.material-filter(id="changeMaterialAccodrion")
+				form.change-material__form.material-filter(action="#" method="POST")
+					.change-material__accordion.material-filter__accordion(id="changeMaterialAccodrion")
 						ul.material-filter__list
 							li.material-filter__item
 								button.material-filter__button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#changeMaterialAccodrionColor" aria-expanded="false" aria-controls="changeMaterialAccodrionColor")
@@ -21,13 +21,20 @@
 									span.material-filter__name Толщина:
 									span.material-filter__value выбрать
 						ul.material-filter__options-list
-							li.material-filter__options-item.collapse(id="changeMaterialAccodrionColor" data-bs-parent="#changeMaterialAccodrion")
+							li.material-filter__options-item.collapse(id="changeMaterialAccodrionColor" data-bs-parent="#changeMaterialAccodrion" data-da=".material-filter__list,767,1")
 								include material-color
-							li.material-filter__options-item.collapse(id="changeMaterialAccodrionCoating" data-bs-parent="#changeMaterialAccodrion")
-								.material-filter__body
-									h2 Ну тут какой то текст
-							li.material-filter__options-item.collapse(id="changeMaterialAccodrionThickness" data-bs-parent="#changeMaterialAccodrion")
-								.material-filter__body
-									h2 Ну тут какой то текст
+							li.material-filter__options-item.collapse(id="changeMaterialAccodrionCoating" data-bs-parent="#changeMaterialAccodrion" data-da=".material-filter__list,767,3")
+								include material-coating
+							li.material-filter__options-item.collapse(id="changeMaterialAccodrionThickness" data-bs-parent="#changeMaterialAccodrion" data-da=".material-filter__list,767,5")
+								include material-thickness
+					.material-filter__footer
+						p.form__note.d-none.d-lg-block.m-0 Цвета на вашем мониторе могут отличаться от реальных цветов
+						.material-filter__buttons
+							button.material-filter__clear-filter(type="button") Сбросить фильтр
+							button.material-filter__submit(type="submit") Показать товаров: 144
+			.change-material__inner
+				include material-catalog/material-catalog
+
+
 
 
