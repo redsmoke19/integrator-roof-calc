@@ -18,24 +18,24 @@ module.exports = function serve(cb) {
     cors: true
   });
 
-  gulp.watch('dev/static/images/*/*.{gif,png,jpg,svg,webp}', gulp.series(imageMinify)).on('change', server.reload);
-  gulp.watch('dev/static/images/sprite/svg/*.svg', gulp.series(svgSprite)).on('change', server.reload);
-  gulp.watch('dev/static/images/sprite/png/*.png', gulp.series(pngSprite)).on('change', server.reload);
-  // gulp.watch('dev/static/styles/**/*.scss', gulp.series(styles)).on('change', server.reload);
-  gulp.watch('dev/static/styles/**/*.scss', gulp.series(styles));
-  gulp.watch('dev/static/js/**/*.js', gulp.series(script)).on('change', server.reload);
-  gulp.watch('dev/pug/**/*.pug', gulp.series(pug2html)).on('change', server.reload);
-  gulp.watch('dist/*.html').on('change', server.reload);
-  gulp.watch('dist/static/css/styles.css').on('change', server.reload);
+  // gulp.watch('dev/static/images/*/*.{gif,png,jpg,svg,webp}', gulp.series(imageMinify)).on('change', server.reload);
+  // gulp.watch('dev/static/images/sprite/svg/*.svg', gulp.series(svgSprite)).on('change', server.reload);
+  // gulp.watch('dev/static/images/sprite/png/*.png', gulp.series(pngSprite)).on('change', server.reload);
+  // // gulp.watch('dev/static/styles/**/*.scss', gulp.series(styles)).on('change', server.reload);
+  // gulp.watch('dev/static/styles/**/*.scss', gulp.series(styles));
+  // gulp.watch('dev/static/js/**/*.js', gulp.series(script)).on('change', server.reload);
+  // gulp.watch('dev/pug/**/*.pug', gulp.series(pug2html)).on('change', server.reload);
+  // gulp.watch('dist/*.html').on('change', server.reload);
+  // gulp.watch('dist/static/css/styles.css').on('change', server.reload);
 
-  // gulp.watch('dev/static/images/*/*.{gif,png,jpg,svg,webp}', gulp.series(imageMinify));
-  // gulp.watch('dev/static/images/sprite/svg/*.svg', gulp.series(svgSprite));
-  // gulp.watch('dev/static/images/sprite/png/*.png', gulp.series(pngSprite));
-  // gulp.watch('dev/static/styles/**/*.scss', gulp.series(styles));
-  // gulp.watch('dev/static/styles/**/*.scss', gulp.series(styles));
-  // gulp.watch('dev/static/js/**/*.js', gulp.series(script));
-  // gulp.watch('dev/pug/**/*.pug', gulp.series(pug2html));
-  // gulp.watch('dist/*.html');
+  gulp.watch('dev/static/images/*/*.{gif,png,jpg,svg,webp}', gulp.series(imageMinify));
+  gulp.watch('dev/static/images/sprite/svg/*.svg', gulp.series(svgSprite));
+  gulp.watch('dev/static/images/sprite/png/*.png', gulp.series(pngSprite));
+  gulp.watch('dev/static/styles/**/*.scss', gulp.series(styles));
+  gulp.watch('dev/static/styles/**/*.scss', gulp.series(styles));
+  gulp.watch('dev/static/js/**/*.js', gulp.series(script));
+  gulp.watch('dev/pug/**/*.pug', gulp.series(pug2html));
+  gulp.watch('dist/*.html');
 
   return cb();
 };
