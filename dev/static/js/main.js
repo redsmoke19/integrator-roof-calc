@@ -565,6 +565,19 @@
       });
     });
   };
+  const getSelects = () => {
+    const selectItems = document.querySelectorAll('.js-select');
+    if (selectItems.length > 0) {
+      selectItems.forEach(item => {
+        // eslint-disable-next-line no-new
+        new Choices(item, {
+          searchEnabled: false,
+          itemSelectText: '',
+          shouldSort: false,
+        });
+      });
+    }
+  };
   dynamicAdaptiv();
   getPopup();
   getSlider();
@@ -575,4 +588,5 @@
   getTabs();
   getFolderRoofTrigger();
   getLayoutControls();
+  getSelects();
 })();

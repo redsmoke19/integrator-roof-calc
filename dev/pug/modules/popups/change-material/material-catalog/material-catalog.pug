@@ -1,17 +1,19 @@
 .material-catalog
 	.material-catalog__top.d-none.d-md-block
 		.material-catalog__sorting
+			.material-catalog__sort.me-md-40
+					span.material-catalog__sort-name Сортировать по:
+					select.js-select(data-trigger id="materialSortValue")
+						option(value="По рейтингу") По рейтингу
+						option(value="По цене возрастанию") По цене возрастанию
+						option(value="По цене убыванию") По цене убыванию
+						option(value="Сначала акции") Сначала акции
 			.material-catalog__sort
-				button.material-catalog__button.dropdown-toggle(type="button" id="materialCatalogSort" data-bs-toggle="dropdown" aria-expanded="false") Кнопка выпадающего списка
-				ul.dropdown-menu(aria-labelledby="materialCatalogSort")
-					li
-						a.dropdown-item(href="#") По рейтингу
-					li
-						a.dropdown-item(href="#") По цене возрастанию
-					li
-						a.dropdown-item(href="#") По цене убыванию
-					li
-						a.dropdown-item(href="#") Сначала акции
+					span.material-catalog__sort-name Показывать по:
+					select.js-select(data-trigger id="materialSortCount")
+						option(value="30") 30
+						option(value="60") 60
+						option(value="90") 90
 		.material-catalog__switcher
 	.material-catalog__list
 		include material-list
