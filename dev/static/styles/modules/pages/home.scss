@@ -1,0 +1,100 @@
+.main-promo {
+  min-height: 640px;
+  position: relative;
+  overflow: hidden;
+  @media screen and (max-width: 1279px) {
+    min-height: 380px;
+  }
+  &__map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+  }
+  &__inner {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    pointer-events: none;
+    transition-property: opacity;
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 125rem;
+    left: 50%;
+    transform: translateX(-50%);
+    @media screen and (max-width: 1279px) {
+      width: 1217px;
+    }
+  }
+  &__img {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  &__marker {
+    background-color: $dark-blue-color;
+    border-radius: 50%;
+    border: 2px solid $white;
+    height: 20px;
+    position: absolute;
+    transition: all ease-out .15s;
+    width: 20px;
+    @media screen and (max-width: 1279px) {
+      height: 15px;
+      width: 15px;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+    .tooltip__button {
+      border-color: transparent;
+      color: transparent;
+      cursor: pointer;
+      height: 100%;
+      left: 0;
+      pointer-events: auto;
+      top: 0;
+      width: 100%;
+    }
+    &--mansard-window {
+      left: 59.5%;
+      top: 37%;
+    }
+    &--abutment-tape {
+      left: 58.5%;
+      top: 26%;
+    }
+    &--snow-protect {
+      left: 46.5%;
+      top: 56%;
+    }
+  }
+}
+
+.home {
+  .tooltip__link {
+    background-color: $dark-blue-color;
+    border-radius: 15px;
+    color: $white;
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 20px auto 0;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 80%;
+  }
+}

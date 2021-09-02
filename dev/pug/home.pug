@@ -1,0 +1,9 @@
+extends layout/main
+
+block variables
+	-var title = 'Главная страница'
+	-var pageClass = 'home-page'
+
+block content
+	main(class=pageClass)
+		include pages/home/home
