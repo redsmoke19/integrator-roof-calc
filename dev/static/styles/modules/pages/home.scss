@@ -35,7 +35,7 @@
     left: 50%;
     transform: translateX(-50%);
     @media screen and (max-width: 1279px) {
-      width: 1217px;
+      width: 1280px;
     }
   }
   &__img {
@@ -54,6 +54,9 @@
     @media screen and (max-width: 1279px) {
       height: 15px;
       width: 15px;
+    }
+    @media screen and (max-width: 767px) {
+      display: none;
     }
     &:hover {
       transform: scale(1.2);
@@ -79,6 +82,38 @@
     &--snow-protect {
       left: 46.5%;
       top: 56%;
+    }
+    &--metallocherepitsa {
+      left: 65.5%;
+      top: 21%;
+    }
+    &--krovel-ventilation {
+      left: 46.5%;
+      top: 20%;
+    }
+    &--vodostock {
+      left: 58.5%;
+      top: 48.5%;
+    }
+    &--drips {
+      left: 55.5%;
+      top: 78.5%;
+    }
+    &--decorative-system {
+      left: 61.3%;
+      top: 67.5%;
+    }
+    &--shutters {
+      left: 67%;
+      top: 73.5%;
+    }
+    &--spotlights {
+      left: 78%;
+      top: 37.5%;
+    }
+    &--vinyl-siding {
+      left: 64%;
+      top: 81.5%;
     }
   }
 }
